@@ -23,6 +23,7 @@ html,body {
 }
 
 .wrapper:after {
+	display: block;
 	content: "";
 	height: 100px;
 }
@@ -111,6 +112,8 @@ html,body {
 	line-height: 100%;
 	text-align: center;
 	vertical-align: middle;
+	text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
 }
 
 #one-tap .image {
@@ -207,8 +210,18 @@ form .inline-fields > input[type="submit"] {
 		margin-top: 3px;
 		width: 49%;
 	}
+
+	.vp > .p {
+		display: block;
+		margin: 25px auto 0 auto;
+		width: 90%;
+		max-width: 900px;
+	}
+
+	.vp > .p:nth-child(3) {
+		margin: 10px auto 0 auto;
+	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
 }
