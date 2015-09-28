@@ -17,6 +17,8 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link href="css/main.css" rel="stylesheet" media="all">
 
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
   <!-- Google Analytics tracking code -->
   <script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -27,6 +29,9 @@
 	  ga('create', 'UA-67676602-1', 'auto');
 	  ga('send', 'pageview');
 
+	  $('#subscribe').on('click' function() {
+	  	ga('send', 'event', 'button', 'click', 'subscribe');
+	  });
 	</script>
 </head>
 <body>
@@ -50,7 +55,7 @@
 									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email" />
 								</div><div id="zipcode_input" class="mc-field-group">
 									<input type="text" value="" name="MMERGE1" class="" id="mce-MMERGE1" placeholder="Zip Code" />
-								</div><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div><input id="subscribe" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
 						  </div>
 						</div>
 					</form>
