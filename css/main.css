@@ -33,6 +33,19 @@ html,body {
 	background: #59c8eB;
 }
 
+.site-footer > .copyright {
+	position: relative;
+	top: 75px;
+	width: 100%;
+	height: 25px;
+	font-height: 20px;
+	font-weight: 100;
+	line-height: 25px;
+	padding-left: 10px;
+	color: white;
+	background-color: rgba(64, 64, 64, 0.3);
+}
+
 .banner {
 	position: relative;
 	width: 100%;
@@ -129,8 +142,10 @@ html,body {
 }
 
 .vp > .p > p {
-	margin: 10px 0px;
+	margin: 10px;
 	display: block;
+	text-align: center;
+	line-height: 1.5em;
 }
 
 #mc_embed_signup {
