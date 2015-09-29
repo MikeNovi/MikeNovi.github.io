@@ -14,7 +14,7 @@
   <meta property="og:description"   content="On demand trash service." />
   <meta property="og:image"         content="http://ziptrash.co/images/logo.png" />
 
-  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,700,500|Open+Sans:400,300' rel='stylesheet' type='text/css'>
   <link href="css/main.css" rel="stylesheet" media="all">
 
   <!-- Google Analytics tracking code -->
@@ -29,14 +29,23 @@
 	</script>
 </head>
 <body>
-	<div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '1639199119654738',
+	      xfbml      : true,
+	      version    : 'v2.4'
+	    });
+	  };
+
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
 
 	<div class="wrapper">
 		<div class="banner">
@@ -62,7 +71,7 @@
 	</div>
 	<footer class="site-footer">
 		<div class="copyright">Copyright &copy;2015</div>
-		<div class="fb-share-button" data-href="http://ziptrash.co" data-layout="icon_link">Share This</div>
+		<div class="fb-like" data-share="true" data-width="450" data-show-faces="true" />
 	</footer>
 </body>
 </html>
