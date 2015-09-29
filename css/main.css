@@ -9,6 +9,31 @@ html,body {
 	height: 100%;
 }
 
+.full-page { 
+	background: url("../images/billboard-bg-1.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+.full-page .message {
+	position: relative;
+	top: 180px;
+	margin: 0 auto;
+	max-width: 600px;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(255,255,255,0.8);
+	padding: 40px;
+	border-radius: 10px;
+}
+
+.full-page .message > h1 {
+	font-size: 32pt;
+}
+
+.full-page .message > h2 {
+	font-size: 14pt;
+}
+
 .logo {
 	position: absolute;
 	top: 10px;
@@ -203,6 +228,16 @@ form .inline-fields > input[type="submit"] {
 		position: relative;
 		width: 33%;
 		margin: 0 auto;
+	}
+
+	.full-page .message {
+		position: relative;
+		padding: 20px 20px 30px 20px;
+		top: 50px;
+		margin: 0 auto;
+		width: 90%;
+		min-width: 310px;
+		text-align: center;
 	}
 
 	.banner {
