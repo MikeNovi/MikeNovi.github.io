@@ -25,21 +25,23 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,700,500|Open+Sans:400,300' rel='stylesheet' type='text/css'>
   <link href="css/main.css" rel="stylesheet" media="all">
 
-  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
   <!-- Google Analytics tracking code -->
   <script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
 	  ga('create', 'UA-67676602-1', 'auto');
 	  ga('send', 'pageview');
 
-	  $('#subscribe').on('click', function() {
-	  	ga('send', 'event', 'button', 'click', 'subscribe');
-	  });
+	  $(document).ready(function() {
+		  $('#subscribe').on('click', function(e) {
+		  	ga('send', 'event', 'button', 'click', 'subscribe');
+		  });
+		});
 	</script>
 </head>
 <body>
@@ -80,7 +82,7 @@
 				<p>Get next day trash removal, on demand. Never miss trash day again. Stop worrying about who will take your trash out while you are traveling. Eliminate overflowing trash cans.</p>
 			</div><div id="pay-use" class="p">
 				<div class="image"><div class="overlay"><div><h1>Pay for what you use</h1></div></div></div>
-				<p>ZipTrash’s subscription service is designed to meet your needs. Pay per pickup, not for weekly service.</p>
+				<p>ZipTrash’s subscription service is designed to meet your needs. Use it to replace or supplement your existing service. Pay per pickup, not for weekly service.</p>
 			</div><div id="pick-up" class="p">
 				<div class="image"><div class="overlay"><div><h1>Reliable pickup</h1></div></div></div>
 				<p>Licensed, local waste-hauling professionals ensure that your trash is removed on time. Receive a confirmation when your order is placed and a notification when the trash is removed.</p>
